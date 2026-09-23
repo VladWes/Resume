@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+main {
+    background: rgb(238, 238, 238);
+    border: 1px solid rgb(17, 17, 17);
+    margin: 10px auto;
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+
+#avatar {
+    max-width: 100%;
+    height: auto;
+}
+
+.left {
+    width: 60%;
+    background: rgb(203, 224, 211);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0px 10px;
+}
+
+#about,
+#projects {
+    width: 90%;
+}
+
+
+.right {
+    padding: 0px 20px;
+    width: 40%;
+    justify-content: right;
+}
+
+
+.links img {
+    width: 32px;
+    height: 32px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links button:hover {
+    transform: translateY(-4px);
+
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        padding: 15px;
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+    header {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p,
+    li,
+    label {
+        font-size: 14px;
+    }
+
+}
