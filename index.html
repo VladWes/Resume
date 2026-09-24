@@ -62,29 +62,31 @@
                 <label for="search">Поиск: </label>
                 <input type="text" id="search">
                 <p>Фильтры</p>
-                <button type="button">Все</button>
-                <button type="button">Frontend</button>
-                <button type="button">Backend</button>
-                <button type="button">Other</button>
+                <button type="button" class="filter">Все</button>
+                <button type="button" class="filter">Frontend</button>
+                <button type="button" class="filter">Backend</button>
+                <button type="button" class="filter">Other</button>
 
                 <h3>Frontend</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Vue</li>
+                <ul class="skills">
+                    <li class="frontend">HTML</li>
+                    <li class="frontend">CSS</li>
+                    <li class="frontend">JavaScript</li>
+                    <li class="frontend">Vue</li>
                 </ul>
                 <h3>Backend</h3>
-                <ul>
-                    <li>Python</li>
+                <ul class="skills">
+                    <li class="backend">Python</li>
                 </ul>
                 <h3>Other</h3>
-                <ul>
-                    <li>SQL</li>
-                    <li>GitHub</li>
-                    <li>Java (на поверхностном уровне)</li>
-                    <li>C# (на поверхностном уровне)</li>
+                <ul class="skills">
+                    <li class="other">SQL</li>
+                    <li class="other">GitHub</li>
+                    <li class="other">Java (на поверхностном уровне)</li>
+                    <li class="other">C# (на поверхностном уровне)</li>
                 </ul>
+
+                <p id="no-results" class="hidden">Ничего не найдено.</p>
             </section>
         </div>
     </main>

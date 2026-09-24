@@ -15,7 +15,8 @@ header {
 
 header p {
     padding: 20px;
-    background: rgb(200, 200, 200);
+    background: rgb(238, 238, 238);
+    border: 1px solid rgb(17, 17, 17);
     border-radius: 20px;
 }
 
@@ -84,7 +85,6 @@ main {
     border: 1px solid rgb(17, 17, 17);
     border-radius: 100%;
     background-color: rgb(164, 255, 255);
-    z-index: 1;
     position: fixed;
     right: 5%;
     bottom: 5%;
@@ -112,6 +112,25 @@ body.dark-theme .right {
 
 body.dark-theme .change_theme {
     background: gray;
+}
+
+.hidden {
+    display: none;
+}
+
+#no-results {
+    margin-top: 10px;
+}
+
+
+.filter.active {
+    background: rgb(164, 255, 255);
+    border: 1px solid rgb(17, 17, 17);
+}
+
+body.dark-theme .filter.active {
+    background: gray;
+    color: white;
 }
 
 @media (max-width: 768px) {
